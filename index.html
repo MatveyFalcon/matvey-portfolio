@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Matvey Sokolov — Junior UX/UI Designer</title>
+  <meta name="description" content="Matvey Sokolov — Junior UX/UI Designer. Minimalist portfolio with web UI concepts and marketplace infographics." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Matvey Sokolov — Junior UX/UI Designer" />
+  <meta property="og:description" content="Minimalist portfolio with UI concepts and infographic works." />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+  <!-- Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+  <!-- Noise overlay for premium look -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Go to top">
+        <span class="logo__mark">MS</span>
+        <span class="logo__text">Matvey</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Theme toggle -->
+        <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon" id="themeIcon">◐</span>
+        </button>
+
+        <!-- Burger -->
+        <button class="burger" id="burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#projects" class="mobile-menu__link">Projects</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+      <div class="mobile-menu__hint">Press ESC to close</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main class="main">
+    <section class="hero section" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge reveal">
+            <span class="dot"></span> Available for opportunities
+          </div>
+
+          <h1 class="hero__title reveal">
+            Matvey Sokolov — <br />
+            <span class="accent">Junior UX/UI Designer</span>
+          </h1>
+
+          <p class="hero__subtitle reveal">
+            I design clear interfaces and strong visual systems. I work in Figma, Photoshop, Illustrator.
+            I can also build layouts in HTML/CSS and Tilda.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="assets/files/resume.pdf" target="_blank" rel="noopener">
+              Download resume
+            </a>
+          </div>
+
+          <div class="chips reveal">
+            <span class="chip">UX/UI Design</span>
+            <span class="chip">Web Interfaces</span>
+            <span class="chip">Infographics</span>
+            <span class="chip">Prototyping</span>
+            <span class="chip">Figma</span>
+            <span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="card card--hero">
+            <div class="card__top">
+              <div class="card__title">Selected Works</div>
+              <div class="card__meta">2024 — 2026</div>
+            </div>
+            <div class="card__preview">
+              <!-- You can replace this image -->
+              <img src="assets/img/avatar.jpg" alt="Matvey Sokolov portrait" loading="lazy">
+            </div>
+            <div class="card__bottom">
+              <div class="mini">
+                <span class="mini__label">Tools</span>
+                <span class="mini__value">Figma • Adobe CC • Tilda</span>
+              </div>
+              <div class="mini">
+                <span class="mini__label">Focus</span>
+                <span class="mini__value">Minimal UX & Visual clarity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-hint">
+            Scroll to explore ↓
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__desc">
+            UI concepts and infographic works — presented as images with detailed previews.
+          </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters reveal" role="tablist" aria-label="Project filters">
+          <button class="filter is-active" data-filter="all" role="tab">All</button>
+          <button class="filter" data-filter="web" role="tab">Websites</button>
+          <button class="filter" data-filter="info" role="tab">Infographics</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid" id="projectsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__content reveal">
+          <h2 class="section__title">About</h2>
+          <p class="about__text">
+            Hi! I’m Matvey Sokolov — a Junior UX/UI Designer. I’m looking for opportunities to grow and
+            work on meaningful products. I have hands-on experience in design, client communication,
+            and teamwork.
+          </p>
+
+          <ul class="about__list">
+            <li>
+              <span class="bullet"></span>
+              Designed UX/UI solutions for a startup — created interfaces and collaborated with developers and an architect.
+            </li>
+            <li>
+              <span class="bullet"></span>
+              Worked in an agency creating marketplace infographics — posters, certificates, price lists, flyers and more.
+            </li>
+          </ul>
+
+          <p class="about__text">
+            I work in <strong>Figma</strong>, <strong>Adobe Photoshop</strong> and <strong>Illustrator</strong>,
+            and can also build layouts in <strong>HTML/CSS</strong> and <strong>Tilda</strong>.
+            I studied UX analytics and competitor research and I’m confident turning ideas into prototypes and final UI layouts.
+          </p>
+        </div>
+
+        <div class="about__skills reveal">
+          <div class="skills-card">
+            <h3 class="skills-card__title">Skills & Tools</h3>
+
+            <div class="skills-group">
+              <div class="skills-group__title">Design</div>
+              <div class="chips">
+                <span class="chip">UX Research basics</span>
+                <span class="chip">UI Systems</span>
+                <span class="chip">Prototyping</span>
+                <span class="chip">Wireframes</span>
+                <span class="chip">Typography</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-group__title">Tools</div>
+              <div class="chips">
+                <span class="chip">Figma</span>
+                <span class="chip">Photoshop</span>
+                <span class="chip">Illustrator</span>
+                <span class="chip">Tilda</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-group__title">Also</div>
+              <div class="chips">
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">Basic JS</span>
+                <span class="chip">Teamwork</span>
+                <span class="chip">Client communication</span>
+              </div>
+            </div>
+
+            <div class="interest">
+              <div class="interest__title">Currently interested in</div>
+              <p class="interest__text">
+                SaaS dashboards, mobile interfaces, clean editorial websites, and brand-driven design systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner reveal">
+        <h2 class="section__title">Let’s work together</h2>
+        <p class="section__desc">
+          Want to collaborate or talk about a project? I’d love to connect.
+        </p>
+
+        <div class="contact__actions">
+          <a class="btn btn-primary" href="mailto:sokolovmatvey2@gmail.com">Write me</a>
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Behance</a>
+        </div>
+
+        <div class="contact__email">
+          <span class="muted">Email:</span>
+          <a href="mailto:sokolovmatvey2@gmail.com">sokolovmatvey2@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        © <span id="year"></span> Matvey Sokolov
+      </div>
+      <div class="footer__right">
+        Built with clean HTML/CSS/JS • Minimal UX
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-label="Project details">
+      <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+
+      <div class="modal__header">
+        <div>
+          <h3 class="modal__title" id="modalTitle">Project title</h3>
+          <p class="modal__subtitle" id="modalSubtitle">Short description</p>
+        </div>
+        <div class="modal__meta" id="modalMeta">Figma • UI</div>
+      </div>
+
+      <div class="modal__gallery" id="modalGallery"></div>
+
+      <div class="modal__body">
+        <div class="modal__block">
+          <h4>Task</h4>
+          <p id="modalTask"></p>
+        </div>
+        <div class="modal__block">
+          <h4>My role</h4>
+          <p id="modalRole"></p>
+        </div>
+        <div class="modal__block">
+          <h4>Tools</h4>
+          <p id="modalTools"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__overlay" id="lightboxOverlay"></div>
+    <img class="lightbox__img" id="lightboxImg" alt="Preview"/>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
